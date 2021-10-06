@@ -1,0 +1,17 @@
+body {background-color: lightblue}
+
+h1 {
+  text-align: center;
+}
+
+/* form {
+  align-items: center;
+} */
+
+input[type=submit] {
+  background-color: green;
+}
+
+input[type=reset] {
+  background-color: red;
+}

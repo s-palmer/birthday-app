@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/app.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday App</title>
+</head>
+<body>
+  <h1>Hello there!</h1>
+
+  <body>
+    <form action="/birthday" method="POST">
+    <input type="text" name="user-name" placeholder="Enter your name"></input>
+    <input name="birthday-day" type="number" min="1" max="31"></input>
+    <select name="birthday-month" >
+      <option value="january">January</option>
+      <option value="february">February</option>
+      <option value="march">March</option>
+      <option value="april">April</option>
+      <option value="may">May</option>
+      <option value="june">June</option>
+      <option value="july">July</option>
+      <option value="august">August</option>
+      <option value="september">September</option>
+      <option value="october">October</option>
+      <option value="november">November</option>
+      <option value="december">December</option>
+    </select>
+    <input type="submit" value="Go">
+    <input type="reset" value="Reset">
+  </body>
+</body>
+</html>
