@@ -1,12 +1,43 @@
-body {background-color: lightblue}
-
-h1 {
+body {
+  background-color: lightblue;
   text-align: center;
 }
 
-/* form {
+h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+input, label {
+  display: block;
+}
+
+form {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  display: inline-block;
   align-items: center;
-} */
+}
+
+input[type=text] {
+  border: none;
+  padding: 10px 32px;
+}
+
+input[type=number] {
+  border: none;
+  padding: 10px 10px;
+}
+
+input[type=submit], input[type=reset] {
+  border: none;
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 input[type=submit] {
   background-color: green;
@@ -14,4 +45,11 @@ input[type=submit] {
 
 input[type=reset] {
   background-color: red;
+}
+
+select {
+  border-radius: 6px;
+  border: none;
+  padding: 10px 14px;
+  background-color: #f1f1f1;
 }
