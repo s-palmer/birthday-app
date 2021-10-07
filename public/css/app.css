@@ -9,20 +9,22 @@ h1 {
   font-weight: 300;
 }
 
-input, label {
+/* input, label {
   display: block;
-}
+} */
 
 form {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   display: inline-block;
   align-items: center;
+  /* width: 50%; */
 }
 
 input[type=text] {
   border: none;
-  padding: 10px 32px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
 }
 
 input[type=number] {
@@ -32,6 +34,7 @@ input[type=number] {
 
 input[type=submit], input[type=reset] {
   border: none;
+  border-radius: 7px;
   color: white;
   padding: 16px 20px;
   text-decoration: none;

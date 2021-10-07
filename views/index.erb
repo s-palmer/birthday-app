@@ -13,35 +13,38 @@
   <body>
     <h1>Hello there!</h1>
     <body>
-      <div>
+      <section class="form">
         <form action="/birthday" method="POST">
           <div>
-            <label for="name">Enter your name</label>
+            <label for="name">Enter your name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name"></input>
         </div>
-        <div>
-          <label for="birthday">Enter your birthday</label>
-          <input name="birthday_day" id="birthday" type="number" min="1" max="31"></input>
-        <select name="birthday_month" id="birthday">
-          <option value="January">January</option>
-          <option value="February">February</option>
-          <option value="March">March</option>
-          <option value="April">April</option>
-          <option value="May">May</option>
-          <option value="June">June</option>
-          <option value="July">July</option>
-          <option value="August">August</option>
-          <option value="September">September</option>
-          <option value="October">October</option>
-          <option value="November">November</option>
-          <option value="December">December</option>
-        </select>
+        <div id="enter_birthday">
+          <fieldset>
+            <label for="birthday_day">Day:</label>
+            <input name="birthday_day" id="birthday_day" type="number" min="1" max="31"></input>
+            <label for="birthday_month">Month:</label>
+          <select name="birthday_month" id="birthday_month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+        </fieldset>
       </div>
       <div>
         <input type="submit" value="Go">
         <input type="reset" value="Reset">
       </div>
     </form>
-  </div>
+  </section>
 </body>
 </html>
