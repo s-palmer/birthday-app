@@ -18,12 +18,10 @@ class DateCalculator
 
   def parse_date
     @format_date = Date.parse(user_birthday)
-    # .strftime('%d/%m/%Y')
   end
 
   def calc_diff
-    # strftime('%d/%m/%Y')
-    diff = @d - @format_date
+    diff = (@d - @format_date).to_i
   end
 end
 
