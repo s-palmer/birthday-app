@@ -23,7 +23,6 @@ class DateCalculator
 
   def calc_diff
     var = (@format_date - @d).to_i
-    p var
     if var < 0
       @diff = 365 + var
       @greetz = "You have to wait #{@diff} days until your next birthday"
@@ -36,7 +35,3 @@ class DateCalculator
     end
   end
 end
-
-# take user input
-# if date after today, append this year to input, calculate days until
-# if date before today, append next year to input, calculate days until
