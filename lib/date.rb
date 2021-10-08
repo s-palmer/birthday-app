@@ -4,7 +4,7 @@ class DateCalculator
   attr_reader :user_birthday
 
   def initialize
-    @d = Time.now
+    @d = Date.today
     @year = @d.year
   end
 
@@ -22,9 +22,8 @@ class DateCalculator
   end
 
   def calc_diff
-    date = Time.now
     # strftime('%d/%m/%Y')
-    diff = date - @format_date
+    diff = @d - @format_date
   end
 end
 
