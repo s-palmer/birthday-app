@@ -17,7 +17,6 @@ enable :sessions
     session[:name] = params[:name]
     session[:birthday_day] = params[:birthday_day]
     session[:birthday_month] = params[:birthday_month]
-    p params
     redirect to('your-birthday')
   end
 
