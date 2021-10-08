@@ -25,6 +25,9 @@ enable :sessions
     @name = session[:name]
     @birthday_day = session[:birthday_day]
     @birthday_month = session[:birthday_month]
+    @date = DateCalculator.new(@birthday_day, @birthday_month)
+    @date.parse_date
+    @date.calc_diff
 
     erb :your_birthday
   end
